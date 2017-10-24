@@ -1,0 +1,4 @@
+com\codingtest\springbootrest\model\Item.class
+com\codingtest\springbootrest\SpringbootrestApplication.class
+com\codingtest\springbootrest\controller\ItemController.class
+com\codingtest\springbootrest\repository\ItemJpaRepository.class
