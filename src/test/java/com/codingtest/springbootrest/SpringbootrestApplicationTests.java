@@ -49,7 +49,7 @@ public class SpringbootrestApplicationTests {
 	public void addItem() throws Exception {
 
 		String dateStr = "2016-10-25 11:00:00";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 		Date dueDate = sdf.parse(dateStr);
 
