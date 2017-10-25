@@ -19,7 +19,7 @@ public class Item {
 	private Long id;
 	private String title;
 	private String description;
-	@JsonFormat(shape=JsonFormat.Shape.STRING,pattern="yyyy-MM-dd HH:mm:ss z")
+	@JsonFormat(shape=JsonFormat.Shape.STRING,pattern="yyyy-MM-dd HH:mm:ss")
 	private Date dueDate;
 
 	public Item() {
