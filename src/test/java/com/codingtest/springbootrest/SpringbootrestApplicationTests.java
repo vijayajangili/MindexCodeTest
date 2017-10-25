@@ -36,7 +36,7 @@ public class SpringbootrestApplicationTests {
 
 		HttpEntity<String> entity = new HttpEntity<String>(null, headers);
 
-		String dateStr = "2016-10-25 11:00:00 UTC";
+		String dateStr = "2016-10-25 15:00:00"; // converting to UTC time
 		String expected = "{\"id\":1,\"title\":\"JAVA\",\"description\":\"JAVA language\",\"dueDate\":\"" + dateStr
 				+ "\"}";
 		ResponseEntity<String> response = restTemplate.exchange(createURLWithPort("/items/1/"), HttpMethod.GET, entity,
@@ -48,7 +48,7 @@ public class SpringbootrestApplicationTests {
 	@Test
 	public void addItem() throws Exception {
 
-		String dateStr = "2016-10-25 11:00:00 UTC";
+		String dateStr = "2016-10-25 11:00:00";
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
 
 		Date dueDate = sdf.parse(dateStr);
