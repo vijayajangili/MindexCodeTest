@@ -43,10 +43,9 @@ public class ItemControllerTest {
 	@Test
 	public void testFindById() throws Exception {
 
-		String dateStr = "2016-10-25 11:00:00 EDT";
+		String dateStr = "2016-10-25 11:00:00";
 		SimpleDateFormat sdf = new SimpleDateFormat(
-			    "yyyy-MM-dd HH:mm:ss z");
-		sdf.setTimeZone(TimeZone.getTimeZone("EDT"));
+			    "yyyy-MM-dd HH:mm:ss");
 		Date dueDate = sdf.parse(dateStr);
 		Item testItem = new Item((long) 1, "JAVA Book", "Describes Java Language",dueDate);
 		given(itemController.findById(testItem.getId())).willReturn(new ResponseEntity<Item>(testItem, HttpStatus.OK));
